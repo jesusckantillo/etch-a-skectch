@@ -1,0 +1,73 @@
+/* Default CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --pink: #E966A0;
+  --black: #2B2730;
+  --purple: #6554AF;
+  --soft-purple: 9575DE;
+}
+
+html{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--pink);
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 100vh; 
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+aside {
+  background-color: var(--purple);
+  
+}
+
+
+
+.grid-container {
+  display: grid;
+
+}
+
+.grid-cell {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
