@@ -46,6 +46,11 @@ main {
   margin: auto;
 }
 
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
 #buttons-menu {
   background-color: var(--blue);
   min-width: 300px;
@@ -77,12 +82,50 @@ main {
 
 }
 
+#buttons-menu h1 {
+  background-color: gray;
+  border-radius: 5px;
+  padding:  10px;
+}
+
 #buttons-menu button:hover {
   background-color: var(--gray);
 }
 
 #options-menu {
-  background-color: red;
+  background-color: var(--blue);
+  min-width: 300px;
+  max-width: 400px;
+  height: 80%;
+  width: 100%;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#options-menu button {
+  font-family: 'Cabin Sketch', cursive;
+  color: white;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  background-color: #2b3d4f;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.size-options-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .grid-container {
